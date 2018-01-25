@@ -2,12 +2,18 @@
   "main": "node_modules/expo/AppEntry.js",
   "private": true,
   "dependencies": {
+    "axios": "^0.17.1",
     "expo": "^25.0.0",
-    "react": "16.2.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-25.0.0.tar.gz"
+    "react": "^16.2.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-25.0.0.tar.gz",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-promise-middleware": "^5.0.0",
+    "redux-thunk": "^2.2.0"
   },
   "name": "visitcarlow",
-  "version": "0.0.0",
-  "description": "Hello Expo!",
-  "author": null
+  "version": "1.0.0",
+  "description": "Year 4 Project for Mobile App Visit Carlow",
+  "author": "Allen Higgins"
 }
