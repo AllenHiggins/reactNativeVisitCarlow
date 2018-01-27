@@ -3,7 +3,7 @@ import { View } from 'react-native'
 import { Provider } from 'react-redux'
 import store from './store'
 
-import CategoriesList from '../visitcarlow/components/categories/categoriesList'
+import CategoriesList from './components/categories/categoriesList'
 
 export default class App extends Component {
   render() {
@@ -11,6 +11,6 @@ export default class App extends Component {
       <Provider store={store}>
         <CategoriesList />
       </Provider>
-    )
+    );
   }
 }

@@ -5,7 +5,7 @@ export default class CardDisplay extends Component{
     render(){
         return(
             <View>
-                <Text>Card Display</Text>
+                <Text>Card Display test for whatever</Text>
             </View>
         )
     }

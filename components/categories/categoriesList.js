@@ -7,9 +7,12 @@ export default class CategoriesList extends Component{
     render(){
         return(
             <View>
-                <Text>Category List</Text>
+                <Text>Category List Test</Text>
                 <CardDisplay />
             </View>
         )
     }
 }
+
+
+// Need to subscribe to store
