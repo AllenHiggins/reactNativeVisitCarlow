@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "visitcarlow",
-    "description": "This project is really great.",
+    "description": "App for visit carlow.",
     "slug": "visitcarlow",
     "privacy": "public",
     "sdkVersion": "25.0.0",

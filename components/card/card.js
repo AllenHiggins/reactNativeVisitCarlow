@@ -1,12 +1,17 @@
 import React, { Component } from 'react'
-import { View,Text } from 'react-native'
+import { View,Text,Image,TouchableOpacity } from 'react-native'
 
 export default class CardDisplay extends Component{
     render(){
+        const {title,id,image} = this.props.data
         return(
-            <View>
-                <Text>Card Display test for whatever</Text>
-            </View>
+            <TouchableOpacity>
+                <Image 
+                    style={{width: 50, height: 50}} 
+                    source={{uri:image}}
+                />
+                <Text>{title}</Text>
+            </TouchableOpacity>
         )
     }
 }

@@ -1,14 +1,19 @@
 import axios from 'axios'
-import API_GET_CATEGORIES from '../constents'
 
-export function getCategories(){
+export function getCategories(){ 
     return (dispatch) => {
-        axios.get(API_GET_CATEGORIES)
+        axios.get('http://inframe.pythonanywhere.com/category')
         .then((response) =>{
-            dispatch({type:"FETCH_CATEGORIES",payload: response.data})
+            dispatch({
+                type:"FETCH_CATEGORIES",
+                payload: response.data.Catagories
+            })
         })
         .catch((error) => {
-            dispatch({type:"CATEGORIES_ERROR",payload: error})
+            dispatch({
+                type:"CATEGORIES_ERROR",
+                payload: error
+            })
         })
     }
 }

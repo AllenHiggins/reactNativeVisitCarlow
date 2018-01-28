@@ -5,14 +5,22 @@ import CardDisplay from '../card/card'
 
 export default class CategoriesList extends Component{
     render(){
+        const { list } = this.props
         return(
             <View>
-                <Text>Category List Test</Text>
-                <CardDisplay />
+                <Text>LIST</Text>
+                {
+                    list.map((item,index) =>{
+                        return(
+                            <View key={index}>
+                                 <CardDisplay
+                                    data={item}
+                                />
+                            </View>
+                        )    
+                    })
+                }
             </View>
         )
     }
 }
-
-
-// Need to subscribe to store
