@@ -4,8 +4,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
 import * as actionCreators from '../../actions/categoriesAction'
-import CategoriesList from './categoriesList'
-
+import ParallaxHeaderList from '../ParallaxHeader/ParallaxHeaderList'
 class Category extends Component{
     constructor(props){
         super(props)
@@ -13,14 +12,12 @@ class Category extends Component{
    
     componentWillMount(){
        this.props.getCategories()
-       console.log("PROPS: ",this.props)
     }
 
     render(){
         return(
             <View>
-                <Text>Index Screen</Text>
-                <CategoriesList 
+                <ParallaxHeaderList
                     list={this.props.categories.list}
                 />
             </View>
